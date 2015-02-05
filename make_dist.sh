@@ -31,7 +31,7 @@ LIB_DIST_NAME=${LIB_DIR_NAME}.tar.gz
 mkdir $TMP_DIR
 cp -r $SOURCE_DIR $TMP_DIR/$LIB_DIR_NAME
 cd $TMP_DIR
-tar --exclude-vcs -czf $LIB_DIST_NAME $LIB_DIR_NAME
+tar -czf $LIB_DIST_NAME --exclude-vcs $LIB_DIR_NAME
 cp $LIB_DIST_NAME $CURRENT_DIR
 rm -rf $TMP_DIR
 
